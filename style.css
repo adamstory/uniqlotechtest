@@ -1,0 +1,125 @@
+:root {
+  --colour-red: red;
+  --colour-grey: rgba(244, 244, 244, 0.95);
+  --colour-white: white;
+  --colour-black: #1b1b1b;
+}
+
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+body {
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+}
+
+@media (max-width: 400px) {
+  .header_container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .header_image_mobile {
+    max-width: 100%;
+  }
+
+  .exclusive_offer_countdown {
+    display: flex;
+  }
+
+  .countdown_background_container {
+    height: 100vh;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .countdown_background_asset_mobile {
+    max-height: 100vh;
+  }
+
+  .countdown_text_container {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    margin-bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: center;
+  }
+
+  .countdown_header_container {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .countdown_header_text {
+    font-size: 1.5rem;
+    color: var(--colour-white);
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .countdown_date_container {
+    display: flex;
+    width: 90%;
+    height: 50%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .countdown_date_container > div {
+    background-color: var(--colour-red);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 1% 0 1%;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  .countdown_date_container > div > h2 {
+    color: white;
+    margin-bottom: 10%;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  .countdown_date_container > div > h3 {
+    color: white;
+    margin-bottom: 10%;
+    font-size: 0.7rem;
+    font-weight: 200;
+  }
+
+  .header_image_web {
+    display: none;
+  }
+}
+
+@media (min-width: 400px) {
+  .header_container {
+    width: 100%;
+  }
+
+  .header_image_mobile {
+    display: none;
+  }
+
+  .header_image_web {
+    width: 100%;
+    height: auto;
+  }
+}
