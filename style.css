@@ -148,9 +148,93 @@ body {
     font-weight: 300;
   }
 
+  .splide {
+    padding-bottom: 20%;
+  }
+
   .splide__slide img {
     width: 100%;
     height: auto;
+  }
+
+  .splide__slide h3 {
+    font-size: 0.6rem;
+    font-weight: 200;
+    margin-top: 4%;
+  }
+
+  .carousel_image_container {
+    position: relative;
+  }
+
+  .carousel_price_sticker {
+    color: var(--colour-white);
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--colour-red);
+    bottom: 5%;
+    right: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel_price_sticker h2 {
+    font-size: 0.7rem;
+  }
+
+  .user_signup_container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--colour-grey);
+    width: 100%;
+  }
+
+  .user_signup_text_container {
+    width: 80%;
+    padding: 25% 0 25% 0;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .user_signup_title {
+    color: var(--colour-red);
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 90%;
+    padding-bottom: 10%;
+    font-size: 1.2rem;
+  }
+
+  .user_registration_options_container {
+    background-color: yellow;
+  }
+
+  .user_registration_title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 2% 0 2% 0;
+  }
+
+  .user_registration_description {
+    font-size: 0.7rem;
+    font-weight: 300;
+    padding: 1% 0 5% 0;
+  }
+
+  .register_button {
+    width: 100%;
+    height: 2.3rem;
+    background-color: black;
+    color: var(--colour-white);
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
   }
 
   .header_image_web {
