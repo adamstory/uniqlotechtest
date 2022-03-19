@@ -20,60 +20,62 @@
     </div>
   </header>
   <section id="feature_one">
-    <div class="exclusive_offer_countdown">
-      <div class="countdown_background_container">
-        <img
-          class="countdown_background_asset_mobile"
-          src="./Images/hero-m.jpg"
-        />
-      </div>
-      <div class="countdown_text_container">
-        <div class="countdown_header_container">
-          <h1 class="countdown_header_text">
-            UNIQLO member <br />
-            exclusive offers
-          </h1>
+    <div class="countdown_overlay_web">
+      <div class="exclusive_offer_countdown">
+        <div class="countdown_background_container">
+          <img
+            class="countdown_background_asset_mobile"
+            src="./Images/hero-m.jpg"
+          />
+          <img class="countdown_background_asset_web" src="./Images/hero.jpg" />
         </div>
-        <div class="countdown_date_container">
-          <div class="countdown_date_container_days">
-            <h2 id="days">02</h2>
-            <h3 id="days_Text">Days</h3>
+        <div class="countdown_text_container">
+          <div class="countdown_header_container">
+            <h1 class="countdown_header_text">
+              UNIQLO member exclusive offers
+            </h1>
           </div>
-          <div class="countdown_date_container_hours">
-            <h2 id="hours">23</h2>
-            <h3 id="hours_Text">Hours</h3>
-          </div>
-          <div class="countdown_date_container_minutes">
-            <h2 id="minutes">10</h2>
-            <h3 id="minutes_Text">Minutes</h3>
-          </div>
-          <div class="countdown_date_container_seconds">
-            <h2 id="seconds">13</h2>
-            <h3 id="seconds_Text">Seconds</h3>
+          <div class="countdown_date_container">
+            <div class="countdown_date_container_days">
+              <h2 id="days">02</h2>
+              <h3 id="days_Text">Days</h3>
+            </div>
+            <div class="countdown_date_container_hours">
+              <h2 id="hours">23</h2>
+              <h3 id="hours_Text">Hours</h3>
+            </div>
+            <div class="countdown_date_container_minutes">
+              <h2 id="minutes">10</h2>
+              <h3 id="minutes_Text">Minutes</h3>
+            </div>
+            <div class="countdown_date_container_seconds">
+              <h2 id="seconds">13</h2>
+              <h3 id="seconds_Text">Seconds</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="exclusive_offer_description_container">
-      <div>
-        <h3>
-          Save on our signature Ultra Light Down jackets and vests, made with
-          feather-light down padding, water-repellent outer fabric and a handy,
-          pocketable design.
-        </h3>
+      <div class="exclusive_offer_description_container">
+        <div class="become_a_member_description">
+          <h3>
+            Save on our signature Ultra Light Down jackets and vests, made with
+            feather-light down padding, water-repellent outer fabric and a
+            handy, pocketable design.
+          </h3>
+        </div>
+        <div class="become_a_member_link">
+          <a
+            href="https://www.uniqlo.com/uk/en/login"
+            alt="Become a UNIQLO member"
+          >
+            <h1>Become a member</h1>
+          </a>
+        </div>
       </div>
     </div>
   </section>
   <section id="feature_two">
-    <div class="become_a_member">
-      <div class="become_a_member_link">
-        <a
-          href="https://www.uniqlo.com/uk/en/login"
-          alt="Become a UNIQLO member"
-        >
-          <h1>Become a member</h1>
-        </a>
-      </div>
+    <div class="fill_text_container">
       <div class="fill_latin_text">
         <h2>
           Praesent id mi sed arcu placerat scelerisque. Nullam nec ligula ac
@@ -214,15 +216,28 @@
   <script src="./countdown.js"></script>
   <script>
     new Splide(".splide", {
-      fixedWidth: 250,
-      gap: 10,
+      gap: 40,
       rewind: true,
       pagination: false,
       type: "loop",
       perPage: 3,
       perMove: 1,
-      arrows: false,
+      arrows: true,
       focus: "center",
+      breakpoints: {
+        550: {
+          perPage: 2,
+          fixedWidth: 250,
+          gap: 10,
+          rewind: true,
+          pagination: false,
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          arrows: false,
+          focus: "center",
+        },
+      },
     }).mount();
   </script>
 </body>

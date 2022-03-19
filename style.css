@@ -18,144 +18,372 @@ body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
-@media (max-width: 400px) {
+.header_container {
+  width: 100%;
+  height: 100%;
+}
+
+.header_image_mobile {
+  max-width: 100%;
+}
+
+.exclusive_offer_countdown {
+  display: flex;
+}
+
+.countdown_background_container {
+  height: 100vh;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+}
+
+.countdown_background_asset_mobile {
+  max-height: 100vh;
+}
+
+.countdown_text_container {
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  margin-bottom: 15%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  justify-content: center;
+}
+
+.countdown_header_container {
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.countdown_header_text {
+  font-size: 1.5rem;
+  color: var(--colour-white);
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.countdown_date_container {
+  display: flex;
+  width: 90%;
+  height: 50%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.countdown_date_container > div {
+  background-color: var(--colour-red);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-direction: column;
+  margin: 0 1% 0 1%;
+  width: 20vw;
+  height: 20vw;
+}
+
+.countdown_date_container > div > h2 {
+  color: white;
+  margin-bottom: 10%;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.countdown_date_container > div > h3 {
+  color: white;
+  margin-bottom: 10%;
+  font-size: 0.6rem;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+.exclusive_offer_description_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8% 0 8% 0;
+  width: 100%;
+}
+
+.exclusive_offer_description_container > div {
+  width: 90%;
+  color: var(--colour-black);
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.become_a_member_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 12% 0 0% 0;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.fill_text_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.fill_latin_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 16% 0 16% 0;
+  text-align: center;
+  font-weight: 300;
+}
+
+.splide {
+  padding-bottom: 20%;
+}
+
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+
+.splide__slide h3 {
+  font-size: 0.6rem;
+  font-weight: 200;
+  margin-top: 4%;
+}
+
+.carousel_image_container {
+  position: relative;
+}
+
+.carousel_price_sticker {
+  color: var(--colour-white);
+  position: absolute;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  background-color: var(--colour-red);
+  bottom: 5%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel_price_sticker h2 {
+  font-size: 0.7rem;
+}
+
+.user_signup_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--colour-grey);
+  width: 100%;
+}
+
+.user_signup_text_container {
+  width: 80%;
+  padding: 25% 0 15% 0;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user_signup_title {
+  color: var(--colour-red);
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 90%;
+  padding-bottom: 10%;
+  font-size: 1.2rem;
+}
+
+.user_registration_title {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 2% 0 2% 0;
+}
+
+.user_registration_description {
+  font-size: 0.7rem;
+  font-weight: 300;
+  padding: 1% 0 5% 0;
+}
+
+.register_button {
+  width: 95%;
+  height: 2.3rem;
+  background-color: black;
+  color: var(--colour-white);
+  text-transform: uppercase;
+  border: none;
+  border-radius: 3px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  padding: 10% 0 10% 0;
+  z-index: 0;
+}
+
+.divider_line {
+  border-bottom: 1px solid black;
+  position: absolute;
+  width: 65%;
+}
+
+.divider_text {
+  background-color: var(--colour-grey);
+  height: 80%;
+  width: 15%;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.user_registration_buttons {
+  display: flex;
+}
+
+.user_registration_button {
+  padding: 0 3% 0 3%;
+}
+
+.user_registration_button img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.user_registration_details {
+  padding: 15% 0 0 0;
+  width: 110%;
+}
+
+/* Elements to hide for mobile view */
+
+.header_image_web {
+  display: none;
+}
+
+@media (min-width: 550px) {
   .header_container {
     width: 100%;
-    height: 100%;
   }
 
   .header_image_mobile {
-    max-width: 100%;
+    display: none;
   }
 
-  .exclusive_offer_countdown {
-    display: flex;
+  .header_image_web {
+    display: unset;
+    width: 100%;
+    height: auto;
   }
 
   .countdown_background_container {
     height: 100vh;
+    width: 100vw;
     justify-content: flex-start;
-    position: relative;
     overflow: hidden;
   }
 
   .countdown_background_asset_mobile {
-    max-height: 100vh;
+    display: none;
+  }
+
+  .countdown_background_asset_web {
+    max-height: 100%;
   }
 
   .countdown_text_container {
-    position: absolute;
-    width: 100%;
-    height: 30%;
-    margin-bottom: 15%;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    justify-content: center;
-  }
-
-  .countdown_header_container {
-    height: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .countdown_header_text {
-    font-size: 1.5rem;
-    color: var(--colour-white);
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: bold;
-  }
-
-  .countdown_date_container {
-    display: flex;
-    width: 90%;
-    height: 50%;
-    display: flex;
+    margin-bottom: 0%;
     align-self: center;
-    justify-content: center;
-    flex-direction: row;
+    margin-bottom: 5%;
+    width: 100%;
   }
 
   .countdown_date_container > div {
-    background-color: var(--colour-red);
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
-    margin: 0 1% 0 1%;
-    width: 20vw;
-    height: 20vw;
+    height: 10vh;
+    width: 10vh;
+    margin: 0 0.3% 0 0.3%;
   }
 
   .countdown_date_container > div > h2 {
-    color: white;
-    margin-bottom: 10%;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1.7rem;
   }
 
-  .countdown_date_container > div > h3 {
-    color: white;
-    margin-bottom: 10%;
-    font-size: 0.6rem;
-    font-weight: 200;
-    text-transform: uppercase;
+  .countdown_overlay_web {
+    position: relative;
+    display: flex;
+  }
+
+  .countdown_header_container {
+    height: 40%;
   }
 
   .exclusive_offer_description_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 8% 0 8% 0;
-    width: 100%;
+    position: absolute;
+    padding: 0;
+    bottom: 30%;
   }
 
   .exclusive_offer_description_container > div {
-    width: 90%;
-    color: var(--colour-black);
-    text-align: center;
-    font-size: 0.8rem;
-  }
-
-  .become_a_member {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    width: 55%;
+    max-width: 550px;
+    color: var(--colour-white);
   }
 
   .become_a_member_link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 0.8rem;
-    padding: 4% 0 8% 0;
-    text-transform: uppercase;
-    text-decoration: underline;
+    padding: 2%;
+  }
+
+  .become_a_member_link h1 {
+    font-size: 1rem;
   }
 
   a {
-    text-decoration: none;
-    color: black;
+    color: var(--colour-white);
   }
 
   .fill_latin_text {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 70%;
     padding: 16% 0 16% 0;
     text-align: center;
     font-weight: 300;
   }
 
   .splide {
-    padding-bottom: 20%;
+    margin: auto;
+    padding-bottom: 0%;
+    width: 70%;
+    margin-bottom: 10%;
   }
 
   .splide__slide img {
@@ -189,116 +417,5 @@ body {
 
   .carousel_price_sticker h2 {
     font-size: 0.7rem;
-  }
-
-  .user_signup_container {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--colour-grey);
-    width: 100%;
-  }
-
-  .user_signup_text_container {
-    width: 80%;
-    padding: 25% 0 15% 0;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .user_signup_title {
-    color: var(--colour-red);
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 90%;
-    padding-bottom: 10%;
-    font-size: 1.2rem;
-  }
-
-  .user_registration_title {
-    font-size: 0.8rem;
-    font-weight: 500;
-    padding: 2% 0 2% 0;
-  }
-
-  .user_registration_description {
-    font-size: 0.7rem;
-    font-weight: 300;
-    padding: 1% 0 5% 0;
-  }
-
-  .register_button {
-    width: 95%;
-    height: 2.3rem;
-    background-color: black;
-    color: var(--colour-white);
-    text-transform: uppercase;
-    border: none;
-    border-radius: 3px;
-  }
-
-  .divider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    flex-direction: column;
-    width: 100%;
-    padding: 10% 0 10% 0;
-    z-index: 0;
-  }
-
-  .divider_line {
-    border-bottom: 1px solid black;
-    position: absolute;
-    width: 65%;
-  }
-
-  .divider_text {
-    background-color: var(--colour-grey);
-    height: 80%;
-    width: 15%;
-    z-index: 1;
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
-
-  .user_registration_buttons {
-    display: flex;
-  }
-
-  .user_registration_button {
-    padding: 0 3% 0 3%;
-  }
-
-  .user_registration_button img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
-  .user_registration_details {
-    padding: 15% 0 0 0;
-    width: 110%;
-  }
-
-  .header_image_web {
-    display: none;
-  }
-}
-
-@media (min-width: 401px) {
-  .header_container {
-    width: 100%;
-  }
-
-  .header_image_mobile {
-    display: none;
-  }
-
-  .header_image_web {
-    width: 100%;
-    height: auto;
   }
 }
