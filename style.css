@@ -1,6 +1,6 @@
 :root {
   --colour-red: red;
-  --colour-grey: rgba(244, 244, 244, 0.95);
+  --colour-grey: rgba(244, 244, 244, 1);
   --colour-white: white;
   --colour-black: #1b1b1b;
 }
@@ -138,6 +138,11 @@ body {
     text-decoration: underline;
   }
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
   .fill_latin_text {
     display: flex;
     align-items: center;
@@ -195,7 +200,7 @@ body {
 
   .user_signup_text_container {
     width: 80%;
-    padding: 25% 0 25% 0;
+    padding: 25% 0 15% 0;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -209,10 +214,6 @@ body {
     width: 90%;
     padding-bottom: 10%;
     font-size: 1.2rem;
-  }
-
-  .user_registration_options_container {
-    background-color: yellow;
   }
 
   .user_registration_title {
@@ -235,6 +236,50 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 3px;
+  }
+
+  .divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    padding: 10% 0 10% 0;
+    z-index: 0;
+  }
+
+  .divider_line {
+    border-bottom: 1px solid black;
+    position: absolute;
+    width: 65%;
+  }
+
+  .divider_text {
+    background-color: var(--colour-grey);
+    height: 80%;
+    width: 15%;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .user_registration_buttons {
+    display: flex;
+  }
+
+  .user_registration_button {
+    padding: 0 3% 0 3%;
+  }
+
+  .user_registration_button img {
+    max-width: 95%;
+    max-height: 95%;
+  }
+
+  .user_registration_details {
+    padding: 15% 0 0 0;
+    width: 110%;
   }
 
   .header_image_web {
