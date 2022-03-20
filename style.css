@@ -40,6 +40,8 @@ body {
 
 .countdown_background_asset_mobile {
   max-height: 100vh;
+  min-height: 700px;
+  min-width: 550px;
 }
 
 .countdown_text_container {
@@ -149,7 +151,7 @@ a {
   align-items: center;
   justify-content: center;
   width: 90%;
-  padding: 16% 0 16% 0;
+  padding: 8% 0 16% 0;
   text-align: center;
   font-weight: 300;
 }
@@ -183,12 +185,17 @@ a {
   bottom: 5%;
   right: 10%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .carousel_price_sticker h2 {
   font-size: 0.7rem;
+}
+
+.carousel_price_sticker h3 {
+  display: none;
 }
 
 .user_signup_container {
@@ -399,7 +406,7 @@ a {
 
   #member_link_slider_page {
     display: unset;
-    padding: 0% 0 5% 0;
+    padding: 0% 0 0% 0;
   }
 
   #member_link_slider_page a {
@@ -410,8 +417,10 @@ a {
     margin: auto;
     padding-top: 5%;
     padding-bottom: 5%;
+    height: 70%;
     width: 70%;
-    margin-bottom: 10%;
+    margin-top: 2%;
+    margin-bottom: 5%;
   }
 
   .splide__slide img {
@@ -423,6 +432,35 @@ a {
     font-size: 0.6rem;
     font-weight: 200;
     margin-top: 4%;
+  }
+
+  .carousel_price_sticker {
+    color: var(--colour-white);
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--colour-red);
+    bottom: 5%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel_price_sticker h2 {
+    font-size: 0.7rem;
+  }
+
+  .carousel_price_sticker h3 {
+    display: unset;
+    font-size: 0.5rem;
+    margin-top: -0.3rem;
+    margin-bottom: 0.1rem;
+    color: black;
+    text-decoration: line-through;
+    font-weight: 400;
   }
 
   .user_signup_text_container {
