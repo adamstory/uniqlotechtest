@@ -2,19 +2,12 @@
 
 My response to the UNIQLO tech test.
 
-## Plan
-
-- Init local repo and link to GitHub repo
-- Upload all the relevant files to repository
-
--
-
 ## Notes on brief
 
 - User should: know when offer is live, what's on offer and how to get it.
 - Should be mobile first, responsive web design
 - First section (countdown): full height asset (should be same height on mobile/web), countdown to 6th March 2022, should support singular forms (i.e. 1 day/minute/second instead of 1 days/minutes/seconds)
-- Second section (carousel): Use SplideJS, swipe/click functionality, hide arrows on mobile but keep scroll enabled,  
+- Second section (carousel): Use SplideJS, swipe/click functionality, hide arrows on mobile but keep scroll enabled,
 - Footer section (get user registration): register or download UNIQLO app, QR code on web becomes app badges on mobile
 - Provide with zip folder to view HTML on browser
 
