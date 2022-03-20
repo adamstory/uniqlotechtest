@@ -1,9 +1,13 @@
+/* Root colours */
+
 :root {
   --colour-red: red;
   --colour-grey: rgba(244, 244, 244, 1);
   --colour-white: white;
   --colour-black: #1b1b1b;
 }
+
+/* Check current viewport width for device */
 
 @viewport {
   width: device-width;
@@ -18,6 +22,8 @@ body {
   font-family: "Helvetica Neue", "Arial", sans-serif;
 }
 
+/* Mobile first - Nav Bar */
+
 .header_container {
   width: 100%;
   height: 100%;
@@ -26,6 +32,8 @@ body {
 .header_image_mobile {
   max-width: 100%;
 }
+
+/* Mobile first - Feature One (Countdown) */
 
 .exclusive_offer_countdown {
   display: flex;
@@ -137,6 +145,8 @@ a {
   color: black;
 }
 
+/* Mobile first - Feature Two (Membership Signup and Latin Fill Text) */
+
 .fill_text_container {
   display: flex;
   flex-direction: column;
@@ -154,6 +164,8 @@ a {
   font-weight: 300;
 }
 
+/* Mobile first - Feature Two (Splide Gallery) */
+
 .splide {
   padding-bottom: 20%;
 }
@@ -168,6 +180,8 @@ a {
   font-weight: 200;
   margin-top: 4%;
 }
+
+/* Mobile first - Feature Two (Splide Gallery - Price sticker overlay) */
 
 .carousel_image_container {
   position: relative;
@@ -195,6 +209,8 @@ a {
 .carousel_price_sticker h3 {
   display: none;
 }
+
+/* Mobile first - Feature Three (User Signup Footer) */
 
 .user_signup_container {
   text-align: center;
@@ -288,7 +304,7 @@ a {
   width: 110%;
 }
 
-/* Elements to hide for mobile view */
+/* Mobile first - Elements to hide during mobile view */
 
 .header_image_web {
   display: none;
@@ -302,7 +318,11 @@ a {
   display: none;
 }
 
+/* Web - Media Query to begin from */
+
 @media (min-width: 550px) {
+  /* Web - Nav Bar */
+
   .header_container {
     width: 100%;
   }
@@ -316,6 +336,8 @@ a {
     width: 100%;
     height: auto;
   }
+
+  /* Web - Feature One (Countdown) */
 
   .countdown_background_container {
     height: 100vh;
@@ -385,6 +407,8 @@ a {
     color: var(--colour-white);
   }
 
+  /* Web - Feature Two (Membership signup and fill text) */
+
   .fill_text_container {
     display: flex;
     flex-direction: column;
@@ -411,6 +435,8 @@ a {
     color: black;
   }
 
+  /* Web - Feature Two (Splide gallery) */
+
   .splide {
     margin: auto;
     padding-top: 5%;
@@ -431,6 +457,8 @@ a {
     font-weight: 200;
     margin-top: 4%;
   }
+
+  /* Web - Feature Two (Splide Gallery - Price sticker overlay) */
 
   .carousel_price_sticker {
     color: var(--colour-white);
@@ -460,6 +488,8 @@ a {
     text-decoration: line-through;
     font-weight: 400;
   }
+
+  /* Web - Feature Three (User Signup Footer) */
 
   .user_signup_text_container {
     padding: 10% 0 3% 0;

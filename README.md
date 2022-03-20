@@ -2,6 +2,10 @@
 
 My response to the UNIQLO tech test.
 
+## How to view
+
+- Double click the index.html to open in browser.
+
 ## Notes on brief
 
 - User should: know when offer is live, what's on offer and how to get it.
