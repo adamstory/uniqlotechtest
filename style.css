@@ -33,6 +33,7 @@ body {
 
 .countdown_background_container {
   height: 100vh;
+  min-width: 900px;
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
@@ -289,6 +290,14 @@ a {
   display: none;
 }
 
+#member_link_slider_page {
+  display: none;
+}
+
+#qr_code {
+  display: none;
+}
+
 @media (min-width: 550px) {
   .header_container {
     width: 100%;
@@ -307,6 +316,7 @@ a {
   .countdown_background_container {
     height: 100vh;
     width: 100vw;
+    min-height: 700px;
     justify-content: flex-start;
     overflow: hidden;
   }
@@ -329,6 +339,8 @@ a {
   .countdown_date_container > div {
     height: 10vh;
     width: 10vh;
+    min-height: 70px;
+    min-width: 70px;
     margin: 0 0.3% 0 0.3%;
   }
 
@@ -369,14 +381,30 @@ a {
     color: var(--colour-white);
   }
 
+  .fill_text_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   .fill_latin_text {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
-    padding: 16% 0 16% 0;
+    width: 50%;
+    padding: 10% 0 3% 0;
     text-align: center;
     font-weight: 300;
+  }
+
+  #member_link_slider_page {
+    display: unset;
+    padding: 0% 0 5% 0;
+  }
+
+  #member_link_slider_page a {
+    color: black;
   }
 
   .splide {
@@ -397,25 +425,96 @@ a {
     margin-top: 4%;
   }
 
-  .carousel_image_container {
-    position: relative;
+  .user_signup_text_container {
+    padding: 10% 0 3% 0;
   }
 
-  .carousel_price_sticker {
-    color: var(--colour-white);
-    position: absolute;
-    height: 3rem;
-    width: 3rem;
-    border-radius: 50%;
-    background-color: var(--colour-red);
-    bottom: 5%;
-    right: 10%;
+  .user_signup_title {
+    color: var(--colour-red);
+    padding-bottom: 5%;
+  }
+
+  .user_registration_options_container {
+    display: flex;
+    width: 80%;
+  }
+
+  .user_login_container {
+    width: 40%;
+  }
+
+  .user_registration_title {
+    padding: 5% 0 5% 0;
+  }
+
+  .user_registration_description {
+    padding: 1% 0 5% 0;
+    width: 80%;
+    display: flex;
+    margin: auto;
+  }
+
+  .register_button {
+    width: 50%;
+    border-radius: 5px;
+  }
+
+  .divider {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    flex-direction: row;
+    width: 20%;
+    padding: 10% 0 10% 0;
+    z-index: 0;
   }
 
-  .carousel_price_sticker h2 {
-    font-size: 0.7rem;
+  .divider_line {
+    border-bottom: 0px;
+    left: 0;
+    border-right: 1px solid black;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+  }
+
+  .divider_text {
+    background-color: var(--colour-grey);
+    display: flex;
+    height: auto;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 20%;
+    height: 25%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+  }
+
+  .user_download_container {
+    width: 40%;
+  }
+
+  .user_registration_buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .user_registration_button {
+    padding: 0 3% 0 3%;
+    display: none;
+  }
+
+  #qr_code {
+    display: flex;
+    max-width: 30%;
+    max-height: 30%;
+  }
+
+  .user_registration_details {
+    padding: 13% 0 0 0;
+    width: 60%;
   }
 }
